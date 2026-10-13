@@ -1,0 +1,11 @@
+{
+  "@@locale": "en",
+  "appName": "Cukkie",
+  "@appName": {
+    "description": "App Name"
+  },
+  "loading": "Loading...",
+  "@loading": {
+    "description": "Default offline fallback loading message"
+  }
+}

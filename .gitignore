@@ -7,6 +7,25 @@
 .buildlog/
 .history
 
+# IDE & Editor files
+*.iml
+*.ipr
+*.iws
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Environment and secrets
+.env
+.env.*
+*.env
+
 
 
 # Flutter repo-specific
@@ -49,6 +68,13 @@ unlinked_spec.ds
 # Android related
 **/android/**/gradle-wrapper.jar
 .gradle/
+**/android/.gradle/
+**/android/.cxx/
+.kotlin/
+**/.kotlin/
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
 **/android/captures/
 **/android/gradlew
 **/android/gradlew.bat
@@ -56,6 +82,11 @@ unlinked_spec.ds
 **/android/**/GeneratedPluginRegistrant.java
 **/android/key.properties
 *.jks
+*.keystore
+*.apk
+*.ap_
+*.aab
+*.dex
 
 # iOS/XCode related
 **/ios/**/*.mode1v3
@@ -86,6 +117,15 @@ unlinked_spec.ds
 **/ios/Flutter/flutter_export_environment.sh
 **/ios/ServiceDefinitions.json
 **/ios/Runner/GeneratedPluginRegistrant.*
+*.ipa
+*.dSYM.zip
+*.dSYM/
+
+# Web related
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # macOS
 **/Flutter/ephemeral/
@@ -117,3 +157,5 @@ app.*.symbols
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 !/dev/ci/**/Gemfile.lock
+!pubspec.lock
+!**/Podfile.lock
